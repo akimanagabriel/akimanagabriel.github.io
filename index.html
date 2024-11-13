@@ -4,34 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel's Personal Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #87ceeb; /* Sky blue */
-        text-align: center;
-        margin-top: 50px;
-      }
-      h1 {
-        color: #333;
-      }
-      p {
-        font-size: 18px;
-      }
-      a {
-        color: #007bff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <!-- Include Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Welcome to Gabriel's Personal Page</h1>
-    <p>Hello! I'm Gabriel. This is my personal page hosted on GitHub.</p>
-    <p>
-      Feel free to connect with me on
-      <a href="https://github.com/your-username" target="_blank">GitHub</a>.
-    </p>
+  <body
+    class="bg-sky-300 text-gray-800 flex items-center justify-center min-h-screen"
+  >
+    <div class="text-center bg-white shadow-lg rounded-lg p-8 max-w-xl">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        Welcome to Gabriel's Personal Page
+      </h1>
+      <p class="text-lg mb-6">
+        Hello! I'm <span class="font-semibold">Gabriel</span>. This is my
+        personal page hosted on GitHub.
+      </p>
+      <a
+        href="https://github.com/your-username"
+        target="_blank"
+        class="inline-block bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition"
+      >
+        Visit My GitHub
+      </a>
+    </div>
   </body>
 </html>
